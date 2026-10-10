@@ -9,7 +9,7 @@ Analyze decisions and systems, not personalities. Do not assume the current prob
 
 ## Output
 
-Write one Markdown file after the user confirms both the incident framing and the proposed diagnosis. Use a user-provided path when given; otherwise create `<repo-root>/post-mortems/YYYY-MM-DD-<incident-slug>.md` from `assets/post-mortem-template.md`. Do not overwrite an unrelated report or modify the failed task unless separately authorized.
+Present the post-mortem using [assets/post-mortem-template.md](assets/post-mortem-template.md) after the user confirms both the incident framing and the proposed diagnosis. Do not modify the failed task unless separately authorized.
 
 ## Framework
 
@@ -21,7 +21,7 @@ Restate the desired outcome without naming or assuming the chosen solution. Choo
 
 ### 2. Check the framing with the user
 
-Before root-cause analysis or file creation, send only the factual incident framing:
+Before root-cause analysis, send only the factual incident framing:
 
 - **Goal:** “I understand the desired outcome as …”
 - **Success:** “The task would have succeeded if …”
@@ -91,7 +91,7 @@ Map prevention items to failed guardrails and observable verification. Put hard 
 
 ## Quality Gate
 
-Before saving, verify that the report:
+Before presenting, verify that the report:
 
 - uses a solution-neutral statement of the desired outcome;
 - records factual incident confirmation separately from diagnosis confirmation;
