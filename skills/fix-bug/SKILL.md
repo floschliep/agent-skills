@@ -1,9 +1,9 @@
 ---
-name: fixing-bugs
+name: fix-bug
 description: Choose and validate complete bug fixes after a failure is reproducible. Use when implementing or evaluating a repair requires deciding expected behavior, investigation depth, fix scope, side effects, compatibility, and real-path verification. Use diagnosing-bugs for reproduction and root-cause discovery alone.
 ---
 
-# Fixing Bugs
+# Fix Bug
 
 Fix the behavior, not merely the visible failure. A locally valid value, handled exception, or green unit test does not prove the system reached the right state or output.
 
