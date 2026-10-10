@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check Trajectory"
+  short_description: "Detect goal, strategy, and scope drift"
+  default_prompt: "Use $check-trajectory to compare the active work with its confirmed outcome and evidence, then decide whether to continue, simplify, gather evidence, reframe, ask, or stop."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Define Outcome"
+  short_description: "Create a solution-neutral Goal Charter"
+  default_prompt: "Use $define-outcome to ask me one question at a time, challenge solution-shaped assumptions, and produce a confirmed Goal Charter before we plan implementation."
+policy:
+  allow_implicit_invocation: false

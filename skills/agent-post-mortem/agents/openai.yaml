@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Post-Mortem"
+  short_description: "Reframe failed tasks and choose a better path"
+  default_prompt: "Use $agent-post-mortem to analyze why this task went off course, test whether we were solving the right problem in the right way, and choose a better path forward."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Agent Guidance"
+  short_description: "Distill durable lessons into agent guidance"
+  default_prompt: "Use $review-agent-guidance at the end of this task to review durable guidance improvements within this scope: <repository, directory, or file>."

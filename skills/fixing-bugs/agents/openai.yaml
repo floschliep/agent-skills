@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fixing Bugs"
+  short_description: "Choose complete fixes and prove real behavior"
+  default_prompt: "Use $fixing-bugs to choose an appropriate repair and verify the intended system behavior."
