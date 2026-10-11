@@ -1,37 +1,50 @@
-# Agent skills
+# Agent Skills
 
-My personal agent skills: workflows I use and refine, with their history in Git.
+A collection of agent skills I find useful.
 
-## Skills
+## Overview
 
-| Skill | Purpose |
-| --- | --- |
-| [agent-post-mortem](skills/agent-post-mortem/SKILL.md) | Analyze failed agent tasks and choose a better path forward. |
-| [check-trajectory](skills/check-trajectory/SKILL.md) | Check an active task for drift in goals, strategy, or scope. |
-| [define-outcome](skills/define-outcome/SKILL.md) | Establish the desired outcome and success criteria before planning. |
-| [fix-bug](skills/fix-bug/SKILL.md) | Choose complete fixes and verify the resulting behavior. |
-| [review-agent-guidance](skills/review-agent-guidance/SKILL.md) | Capture durable lessons in agent guidance after a task. |
-| [shape-change](skills/shape-change/SKILL.md) | Establish observable behavior and data semantics before implementation. |
+### Define Outcome
 
-## Local setup
+Use [define-outcome](skills/define-outcome/SKILL.md) to work out what you want to achieve, how you'll judge success, and what's outside the scope before choosing a solution.
 
-Keep this checkout as the source of truth and symlink individual skill folders into
-`~/.agents/skills`. For example, when that destination does not already exist:
+> "I want to automate customer support."
 
-```sh
-mkdir -p ~/.agents/skills
-ln -s "$PWD/skills/check-trajectory" ~/.agents/skills/check-trajectory
-```
+### Shape Change
 
-Run the link command from the repository root. Repeat for the skills you want.
-Edit the files in this checkout, then commit and push changes normally. Keep the
-checkout at the same path so the links continue to work.
+Use [shape-change](skills/shape-change/SKILL.md) to clarify how a proposed change should behave: what users see, what actions do, and how data is handled.
 
-Each skill includes a `SKILL.md` and any supporting files it needs. These are
-personal workflows; some assume Codex tools and are not tested across harnesses.
-`fix-bug` refers to `diagnosing-bugs`, which I install separately from
-[Matt Pocock's skills](https://github.com/mattpocock/skills).
+> "We're adding saved searches. What happens when someone edits or deletes one?"
 
-## License
+### Fix Bug
 
-No license has been selected yet.
+Use [fix-bug](skills/fix-bug/SKILL.md) to choose a fix that addresses the cause, accounts for side effects, and verifies the original failing scenario.
+
+> "When changing selection users briefly see the wrong detail screen."
+
+This skill references the `diagnosing-bugs` skill from [mattpocock/skills](https://github.com/mattpocock/skills), which can be helpful for complex diagnosis.
+
+### Check Trajectory
+
+Use [check-trajectory](skills/check-trajectory/SKILL.md) to pause an active task and check whether its goals, approach, and scope still make sense given what you've learned. It's useful in long-running tasks, whether one agent is working alone or coordinating multiple agents.
+
+> "We've tried three fixes and keep expanding the scope. Reassess the approach."
+
+### Agent Post-Mortem
+
+Use [agent-post-mortem](skills/agent-post-mortem/SKILL.md) to examine why an agent task went wrong, including whether it pursued the right problem and approach, and decide what to do next.
+
+> "The agent built a complicated solution that missed the goal. What went wrong?"
+
+### Review Agent Guidance
+
+Use [review-agent-guidance](skills/review-agent-guidance/SKILL.md) to review a completed task for lessons worth keeping in agent guidance, tooling, tests, or documentation.
+
+> "We repeatedly corrected the same mistake. Should we update AGENTS.md or add a check?"
+
+## Other Skill Collections
+
+Other collections of skills I like to use:
+
+- [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)
+- [mattpocock/skills](https://github.com/mattpocock/skills)
