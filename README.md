@@ -12,7 +12,7 @@ Use [define-outcome](skills/define-outcome/SKILL.md) to work out what you want t
 
 ### Shape Change
 
-Use [shape-change](skills/shape-change/SKILL.md) to clarify how a proposed change should behave: what users see, what actions do, and how data is handled.
+Use [shape-change](skills/shape-change/SKILL.md) for non-technical planning: clarify how a proposed change should work, including the user experience, expected behavior, and edge cases, before deciding how to implement it.
 
 > "We're adding saved searches. What happens when someone edits or deletes one?"
 
