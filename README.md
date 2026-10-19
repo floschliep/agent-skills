@@ -48,3 +48,4 @@ Other collections of skills I like to use:
 
 - [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)
 - [mattpocock/skills](https://github.com/mattpocock/skills)
+- [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
