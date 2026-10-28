@@ -16,6 +16,12 @@ Use [shape-change](skills/shape-change/SKILL.md) for non-technical planning: cla
 
 > "We're adding saved searches. What happens when someone edits or deletes one?"
 
+### Staged Implementation
+
+Use [staged-implementation](skills/staged-implementation/SKILL.md) for large features, redesigns, or refactors delivered in stages, with separate implementation and review agents. Each completed stage is committed before the agent continues to the next.
+
+> "Replace our single-page checkout with a multi-step flow for shipping, payment, and order review, committing each reviewed stage before continuing."
+
 ### Fix Bug
 
 Use [fix-bug](skills/fix-bug/SKILL.md) to choose a fix that addresses the cause, accounts for side effects, and verifies the original failing scenario.
